@@ -120,7 +120,7 @@ console.log('map関数の戻り値:', mapCallback);
 const filter = (array, callback) => {
     const filteredArray = []
     each(array, (value, index) => {
-        if (callback(value, index) === true) {
+        if (callback(value, index)) {
             filteredArray.push(value);
         }
     });
